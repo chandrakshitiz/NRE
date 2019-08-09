@@ -1,0 +1,45 @@
+.b
+{
+	background-color:7ecfc0;
+	color:fff6da;
+	background-image:url("mybackground.jpeg");
+	background-repeat:no-repeat;
+	background-position:right:
+	background-size:contain;
+	background-attachment:none;
+}
+.f1
+{
+	font-size:6.5rem;
+}
+a{
+	text-decoration:none;
+	color:60a9a6;
+}
+.box
+{
+	width:29%;
+	height:25%;
+	background-color:caf2d7;
+	color:60a9a6;
+	box-shadow:3px 3px 3px 5px grey;
+	box-sizing:border-box;
+	border-radius:10px;
+	text-align:center;
+	padding:4.5%;
+	margin:2%; 
+	font-family: 'Anton', sans-serif;
+	font-weight:bold;
+	font-size:2rem;
+}
+.box:hover
+{
+	width:31%;
+	height:27%;
+	font-size:2.5rem;
+	transition:all 0.5s;
+}
+.f
+{
+	font-size:1.4rem;
+}
