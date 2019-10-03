@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+	<center>
+		<div class="header"><img src="l1.jpeg" style="width:85px;border-radius:50%;float:left"><span class="s1">  National Rural Employment</span><br><span class="s2">Empowering Rurals !</span>
+		</div>
+		<div class="navbar">
+			<a class="navitem" href="#">ABOUT</a>
+			<a class="navitem" href="#">USER LOGIN</a>
+			<a class="navitem" href="#">EMPLOYER LOGIN</a>
+			<a class="navitem" href="#">AT A GLANCE</a>
+			<a class="navitem" href="#">FEEDBACK</a>
+			<a class="navitem" href="#">CONTACT US</a>
+		</div>
+	</center>
+	<div class="carousel">
+		<img class="carouselright" src="rightarrow.jpeg" height="30px" width="30px" onclick="caro()">
+		<img class="carouselleft" src="leftarrow.jpeg" height="30px" width="30px" onclick="caro()">
+	</div>	
+	<center>
+		<span class="s1">News & Events</span><br>
+	</center>
+		<div class="n_and_e">
+			<center>
+				<a href="#" class="news"> Registration Date extended</a><br>
+				<a href="#" class="news"> New Works Added </a><br>
+				<a href="#" class="news"> Tracking , Status features added</a>
+			</center> 
+		</div>
+	<div class="user">
+		<a href="" class="useritem">
+			<img src="siimg.jpeg" style="border-radius:50%" width="100%" height="125px">
+			Already Registered<br>Login
+		</a>
+		<a href="" class="useritem">
+			<img src="signupimg.jpeg" style="border-radius:50%" width="100%" height="125px">
+			Not Registered yet<br>Sign Up
+		</a>
+	</div>				
+	<div class="about">
+		<hr>
+		<span style="font-size:1.5em">The NRE</span> aims at enhancing the livelihood security of people in rural areas by guaranteeing hundred days of wage-employment in a financial year to a rural household whose adult members volunteer to do unskilled manual work.
+		<br>
+		<hr>
+		<br>
+		<div class="intro">
+			<a href="" class="introitem">
+			<img src="applyimg.jpeg" class="introitemimg">
+			Appy Now
+			</a>
+			<a href="" class="introitem">
+			<img src="chatimg.jpeg" class="introitemimg">
+			Support
+			</a>
+			<a href="" class="introitem">
+			<img src="workimg.jpeg" class="introitemimg">
+			Works
+			</a>
+			<a href="" class="introitem">
+			<img src="timeimg.jpeg" class="introitemimg">
+			Track Status
+			</a>
+			<a href="" class="introitem">
+			<img src="wage.jpeg" class="introitemimg">
+			Wage
+			</a> 	 	 		
+		</div>
+	</div>
+	<div class="feedback">
+		<center><span class="s1">Feedback</span></center>
+		<form style="text-align:left;margin:0px auto;width:50vw">
+			Name:<br>
+			<input class="formelement1" type="text" id="name"><br>
+			E-mail id:<br>
+			<input class="formelement1" type="email" id="email"><br>
+			Message:<br>
+			<textarea class="formelement2" id="message"></textarea>
+			<center><input type="submit" class="feedbackbtn" value="Submit">
+		</form>
+	</div>
+	<div class="imagegallery">
+	</div>	
+	<script src="homepage.js">
+	</script>
+
+</body>
+</html>
