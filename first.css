@@ -1,0 +1,9 @@
+letter
+{
+	background-color:mediumseagreen;
+	color:white;
+}
+date,name,address1,address2,p
+{
+	display:block;
+}

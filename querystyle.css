@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.query-container{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 600px;
+    margin:1.2rem auto;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+.query-container h3.head{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 1.2rem 0;
+}
+
+.query-container form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+}
+.query-container form input,label,select{
+    padding: 0.5rem 0;
+}
+.query-container form input[placeholder ="Others.."]
+{
+    margin: 1rem 0;
+}
+
+.query-container form label
+{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(0,0,67);
+}
+.query-container form input[type="text"],input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.query-container form input[type="text"]:focus,input[type="email"]:focus{
+    outline: none;
+    border-bottom: 1px solid red;
+}
+.submit input[type="submit"]{
+    margin: 1.2rem 0;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    color: white;
+    background: rgb(0,0,67);
+    border-radius: 4px;
+    transition: 0.3s;  
+}
+.submit input[type="submit"]:hover{
+    background: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*****************Feedback Message***************/
+p#feedback{
+    margin: 1.2rem 0;
+    padding: 0 1.2rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: none;
+}
+.footer
+{
+    font-size:1.4em;
+    background-color:#78b0a0;
+    font-family: 'Acme', sans-serif;
+    padding:2% 5%;
+}

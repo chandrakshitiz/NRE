@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query</title>
+    <link rel="stylesheet" href="querystyle.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#d2fafb">
+    <div style="position:sticky;top:0px;background-color:#78b0a0;border-bottom:1px solid #7ecfc0;z-index:1;">
+    <center>
+        <a class="header" href="homepage.html"><img src="l1.jpeg" style="width:85px;border-radius:50%;float:left"><span class="s1">  National Rural Employment</span><br><span class="s2">Empowering Rurals !</span>
+        </a>    
+        <div class="navbar">
+            <a class="navitem" href="aboutNreg.html">ABOUT</a>
+            <a class="navitem" href="Login.html">USER LOGIN</a>
+            <a class="navitem" href="signup.html">SIGN UP</a>
+            <a class="navitem" href="Works.html">WORKS</a>
+            <a class="navitem" href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx">AT A GLANCE</a>
+            <a class="navitem" href="wage.html">WAGE RATE</a>
+            <a class="navitem" href="query.html"  style="color:#004e92;">SUPPORT</a>
+            <a class="navitem" href="homepage.html#feed">FEEDBACK</a>
+            <a class="navitem" href="homepage.html#contact">CONTACT US</a>
+        </div>
+    </center>
+    </div>
+    </div>
+    <div class="query-container">
+        <h3 class="head">For Any Query</h3>
+        <form class="query" id="query">
+            <label>First Name:</label>
+            <input type="text" required><br>
+            <label>Last Name:</label>
+            <input type="text" required><br>
+            <label>Contact Number:</label>
+            <input type="text" required><br>
+            <label>Email</label>
+            <input type="email" required><br>
+            <label>Select your problem</label>
+            <select name="problems" id="problems">
+                <option value="prblm1">Wage not received</option>
+                <option value="prblm2">Delay in Appointment</option>
+                <option value="prblm3">Application not submitting</option>
+                <option value="prblm4">No Confirmation received</option>
+                <option value="prblm5">Wrong Credentials</option>
+            </select><br>
+            <input type="text" placeholder="Others..">
+            <div class="submit">
+                <input type="submit">
+            </div>
+
+        </form>
+        <p id="feedback">Your Response has been recorded.....</p>
+    </div>
+    <br>
+    <div class="footer" id="contact">
+        <span style="font-size:1.5em">Contact Us:</span><br><br>
+        <b>Head Quarter :</b> MCGM Compound, Pipe Line Road, Vakola, Mumbai-400055<br>
+        <b>E-mail :</b> nre@rediffmail.com<br>
+        <b>Toll Free No. :</b> 1800 2540 6666
+    </div>
+
+    <script>
+        var form = document.getElementById('query');
+        var feedback = document.getElementById('feedback');
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+            form.style.visibility = "hidden";
+            feedback.style.display = "block";
+        })
+    </script>
+
+</body>
+</html>
