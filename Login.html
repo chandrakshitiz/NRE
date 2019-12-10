@@ -18,7 +18,7 @@
 			align-self:center;
 			background-color:black;
 			color:white;
-			height:65vh;
+			height:60vh;
 			width:25vw;
 			box-sizing: border-box;
 			border:1px solid black;
@@ -67,10 +67,11 @@
 			<a class="navitem" href="aboutNreg.html">ABOUT</a>
 			<a class="navitem" href="Login.html" style="color:#004e92;">USER LOGIN</a>
 			<a class="navitem" href="signup.html">SIGN UP</a>
+			<a class="navitem" href="employer.html">EMPLOYER</a>
 			<a class="navitem" href="Works.html">WORKS</a>
 			<a class="navitem" href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx">AT A GLANCE</a>
 			<a class="navitem" href="wage.html">WAGE RATE</a>
-			<a class="navitem" href="query.html">SUPPORT</a>
+			
 			<a class="navitem" href="homepage.html#feed">FEEDBACK</a>
 			<a class="navitem" href="homepage.html#contact">CONTACT US</a>
 		</div>
@@ -82,14 +83,14 @@
 				<h1>LOG-IN</h1>
 			</center>
 			<div class="credential">
-				<form>
-					<span style="font-size:2rem">User ID :</span>
-					<input type="text" style="font-size:1.5rem;width:100%;background-color:#008080;color:white;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br>
+				<form action="loginto" method="post">
+					<span style="font-size:2rem">Adhaar No. :</span>
+					<input type="text" name="adhaar" style="font-size:1.5rem;width:100%;background-color:#008080;color:white;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br>
 					<span style="font-size:2rem">Password :</span>
-					<input type="password" style="font-size:1.5rem;width:100%;background-color:#008080;color:black;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br><br>
+					<input type="password" name="password" style="font-size:1.5rem;width:100%;background-color:#008080;color:black;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br><br>
 					<center>
-						<button class="sub" value="Submit">Submit</button>
-					</center><br>
+						<input type="submit" class="sub" value="Submit">
+					</center><br><br>
 					<a href="signup.html" class="link">New User, Register here </a>
 				</form>		
 			</div>		

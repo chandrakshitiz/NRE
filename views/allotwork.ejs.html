@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Allotment
+	</title>
+</head>
+<body>
+	<center>
+		<div>
+			<% var i;
+				for(i=0;data.length;i++)
+				{%>
+					<ul>
+						<li>Adhaar No. : <%=data[i].adhaar%></li>
+						<li>Name : <%=data[i].name%></li>
+						<li>E-mail : <%=data[i].email%></li>
+					</ul>
+
+				<%}%>
+		</div>		
+</body>
+</html>

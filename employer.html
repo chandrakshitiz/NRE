@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<style>
+		body
+		{margin:auto 0px;}
+		.container2
+		{
+			display:flex;
+			justify-content:center;
+			
+			height:80vh;
+			margin-top:100px;
+		}
+		.content
+		{
+			opacity:0.75;
+			align-self:center;
+			background-color:black;
+			color:white;
+			height:60vh;
+			width:25vw;
+			box-sizing: border-box;
+			border:1px solid black;
+			border-radius:10px;
+		}
+		.heading
+		{
+			display:inline-block;
+			width:49%;
+			text-decoration: none;
+			font-size:2.5rem;
+		}
+		.credential
+		{
+			margin:auto;
+			margin:0px 20px;
+		}
+		.sub
+		{
+			font-size:1.2rem;color:white;padding: 10px 70px;background-color:tomato;border:2px solid #C39953;border-radius:25px;
+		}
+		.sub:hover
+		{
+			color:white;
+			background-color:#008080;
+		}
+		.link
+		{
+			text-decoration:underline;font-size:1.2rem;color:white;
+		}
+		.link:hover
+		{
+			color:#008080;
+		}
+		.b1,.b2{
+			background: rgb(0,0,67);
+			color:white;
+			padding:15px 60px;
+			border-radius:15px;
+		}
+		.b1:hover,.b2:hover{
+			background-color:white;
+			color:rgb(0,0,67);
+		}
+		#d1,#d2
+		{
+			display:none;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#d2fafb">
+	<div style="position:sticky;top:0px;background-color:#78b0a0;border-bottom:1px solid #7ecfc0;z-index:1;">
+	<center>
+		<a class="header" href="homepage.html"><img src="l1.jpeg" style="width:85px;border-radius:50%;float:left"><span class="s1">  National Rural Employment</span><br><span class="s2">Empowering Rurals !</span>
+		</a>	
+		<div class="navbar">
+			<a class="navitem" href="aboutNreg.html">ABOUT</a>
+			<a class="navitem" href="Login.html">USER LOGIN</a>
+			<a class="navitem" href="signup.html">SIGN UP</a>
+			<a class="navitem" href="employer.html"  style="color:#004e92;">EMPLOYER</a>
+			<a class="navitem" href="Works.html">WORKS</a>
+			<a class="navitem" href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx">AT A GLANCE</a>
+			<a class="navitem" href="wage.html">WAGE RATE</a>
+			
+			<a class="navitem" href="#feed">FEEDBACK</a>
+			<a class="navitem" href="#contact">CONTACT US</a>
+		</div>
+	</center>
+	</div>
+	<div id="f" style="height:80vh;width:100vw;display:flex;justify-content:space-around;">
+		<div style="align-self: center"><h1> For EMPLOYER LOG-IN</h1><br>
+			<center><button id="btn1" class="b1" onclick="fun1()">Login</button></center>
+		</div>
+		<div style="align-self: center" ><h1> For EMPLOYER SIGN-UP</h1><br>
+			<center><button id="btn2" class="b2"onclick="fun2()">Signup</button></center>
+		</div>
+	</div>
+	<center>
+	<div id="d1" class="container">
+		<h3 style="text-align:center;color:black">Employer Sign-Up Form</h3>
+		<form action="employerReg" method="POST">
+			Name :<br>
+			<input type="text" name="name" required><br>
+			E-mail :<br>
+			<input type="email" name="email" required><br>
+			Date Of Birth :<br>
+			<input type="text" name="dob" placeholder="DD/MM/YYYY" required><br>
+			Adhaar No. :<br>
+			<input type="tel" name="adhaar" required><br>
+			Password :<br>
+			<input type="password" name="password" required><br>
+			Mobile No. :<br>
+			<input type="tel" name="mobile" required><br>
+			<div class="submit">
+                <input type="submit">
+            </div>
+            <center><a href="employer.html" style="color:black;"class="link">Click here to go back</a></center>
+		</form>
+
+	</div>
+	</center>
+	<center>
+	<div id="d2" class="container2">
+		<div class="content">
+			<center>
+				<h1>Employer Login</h1>
+			</center>
+			<div class="credential">
+				<form action="employerloginto" method="post">
+					<span style="font-size:2rem;text-align:left;">Adhaar No. </span>
+					<input type="text" name="adhaar" style="font-size:1.5rem;width:100%;background-color:#008080;color:white;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br>
+					<span style="font-size:2rem">Password </span>
+					<input type="password" name="password" style="font-size:1.5rem;width:100%;background-color:#008080;color:black;height:32px;border:2px solid #02A4D3;border-radius:7px"><br><br><br>
+					<center>
+						<input type="submit" class="sub" value="Submit">
+					</center><br><br>
+					<a href="employer.html" class="link">Click here to go back</a>
+				</form>		
+			</div>		
+		</div>			
+	</div>
+	</center>	
+	<div class="footer" id="contact">
+		<span style="font-size:1.5em">Contact Us:</span><br><br>
+		<b>Head Quarter :</b> MCGM Compound, Pipe Line Road, Vakola, Mumbai-400055<br>
+		<b>E-mail :</b> nre@rediffmail.com<br>
+		<b>Toll Free No. :</b> 1800 2540 6666
+	</div>	
+	<script>
+		var x=document.getElementById("btn1");
+		var y=document.getElementById("btn2");
+		var z=document.getElementById("d1");
+		var a=document.getElementById("d2");
+		var c=document.getElementById("f");
+		function fun1()
+		{
+			z.style.display="none";
+			a.style.display="block";
+			c.style.display="none";
+		}
+		function fun2()
+		{
+			a.style.display="none";
+			z.style.display="block";
+			c.style.display="none";
+		}
+</script>
+
+</body>
+</html>

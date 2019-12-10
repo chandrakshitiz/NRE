@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logged In</title>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="querystyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<style>
+		body
+		{
+			margin:0 auto;
+		}
+		.header
+		{
+			display:inline-block;
+			text-decoration:none;
+			color:black;
+
+		}
+		.s1
+		{
+			display:inline-block;
+			padding-top:10px;
+			font-family: 'Anton', sans-serif;
+			font-size:2.3em;
+		}
+		.s2
+		{
+			font-weight:bold;
+			font-size:1.2em;
+		}
+		a
+		{
+			text-decoration:none;
+		}
+		.a1
+		{
+			float:right;display:inline-block;padding:10px 25px;
+			background: rgb(0,0,67);
+			color:white;
+		}
+		.a1:hover
+		{
+			background-color:white;
+			color:rgb(0,0,67);
+		}
+		.b1,.b2{
+			background: rgb(0,0,67);
+			color:white;
+			padding:15px 60px;
+			border-radius:15px;
+		}
+		.b1:hover,.b2:hover{
+			background-color:white;
+			color:rgb(0,0,67);
+		}
+		#d1,#d2
+		{
+			display:none;
+		}
+	</style>
+</head>
+<body style="background-color:#d2fafb">
+	<div style="position:sticky;top:0px;background-color:#78b0a0;border-bottom:1px solid #7ecfc0;z-index:1;">
+	<center>
+		<a class="header" href="#"><img src="l1.jpeg" style="width:85px;border-radius:50%;float:left"><span class="s1">  National Rural Employment</span><br><span class="s2">Empowering Rurals !</span>
+		</a>
+	</center>
+	</div>
+	<div>
+		<a href="homepage.html" class="a1">Logout</a>
+		<a href="#" class="a1" onclick="fun3()">Go Back</a>
+	</div>
+	<div id="f" style="height:80vh;width:100vw;display:flex;justify-content:space-around;">
+		<div style="align-self: center"><h1>Work Allotment Status</h1><br>
+			<center><button id="btn1" class="b1" onclick="fun1()">Click</button></center>
+		</div>
+		<div style="align-self: center" ><h1>For Any Support</h1><br>
+			<center><button id="btn2" class="b2"onclick="fun2()">Click</button></center>
+		</div>
+	</div>
+		<div id="d1" style="margin-top:50px;justify-content:center">
+			<div style="">
+			<h2>Name : <%=data1[0].name%></h2><br>
+			<h2>E-mail : <%=data1[0].email%></h2><br>
+			<h2>Adhaar No.: <%=data1[0].adhaar%></h2><br>
+			<h2>Work : <%=data2%></h2>
+		</div>
+		</div>
+		<div id="d2" class="query-container">
+        <h3 class="head">For Any Query</h3>
+        <form action="response" class="query" id="query">
+            <label>First Name:</label>
+            <input type="text" required><br>
+            <label>Last Name:</label>
+            <input type="text" required><br>
+            <label>Contact Number:</label>
+            <input type="text" required><br>
+            <label>Email</label>
+            <input type="email" required><br>
+            <label>Select your problem</label>
+            <select name="problems" id="problems">
+                <option value="prblm1">Wage not received</option>
+                <option value="prblm2">Delay in Appointment</option>
+                <option value="prblm3">Application not submitting</option>
+                <option value="prblm4">No Confirmation received</option>
+                <option value="prblm5">Wrong Credentials</option>
+            </select><br>
+            <input type="text" placeholder="Others..">
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    <script>
+		var x=document.getElementById("btn1");
+		var y=document.getElementById("btn2");
+		var z=document.getElementById("d1");
+		var a=document.getElementById("d2");
+		var c=document.getElementById("f");
+		function fun1()
+		{
+			z.style.display="flex";
+			a.style.display="none";
+			c.style.display="none";
+		}
+		function fun2()
+		{
+			a.style.display="block";
+			z.style.display="none";
+			c.style.display="none";
+		}
+		function fun3()
+		{
+			z.style.display="none";
+			a.style.display="none";
+			c.style.display="flex";
+		}
+</script>
+
+</body>
+</html>

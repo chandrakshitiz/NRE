@@ -16,10 +16,11 @@
 			<a class="navitem" href="aboutNreg.html">ABOUT</a>
 			<a class="navitem" href="Login.html">USER LOGIN</a>
 			<a class="navitem" href="signup.html"  style="color:#004e92;">SIGN UP</a>
+			<a class="navitem" href="employer.html">EMPLOYER</a>
 			<a class="navitem" href="Works.html">WORKS</a>
 			<a class="navitem" href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx">AT A GLANCE</a>
 			<a class="navitem" href="wage.html">WAGE RATE</a>
-			<a class="navitem" href="query.html">SUPPORT</a>
+			
 			<a class="navitem" href="#feed">FEEDBACK</a>
 			<a class="navitem" href="#contact">CONTACT US</a>
 		</div>
@@ -27,18 +28,20 @@
 	</div>
 	<center>
 	<div class="container">
-		<h3 style="text-align:center;color:black">Registration/Sign-Up Form</h3>
-		<form>
+		<h3 style="text-align:center;color:black">User Sign-Up Form</h3>
+		<form action="register" method="POST">
 			Name :<br>
-			<input type="text" required><br>
+			<input type="text" name="name" required><br>
 			E-mail :<br>
-			<input type="email" required><br>
-			Username :<br>
-			<input type="text" required><br>
+			<input type="email" name="email" required><br>
+			Date Of Birth :<br>
+			<input type="text" name="dob" placeholder="DD/MM/YYYY" required><br>
 			Adhaar No. :<br>
-			<input type="tel" required><br>
+			<input type="tel" name="adhaar" required><br>
+			Password :<br>
+			<input type="password" name="password" required><br>
 			Mobile No. :<br>
-			<input type="tel" required><br>
+			<input type="tel" name="mobile" required><br>
 			<div class="submit">
                 <input type="submit">
             </div>
